@@ -9,7 +9,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { MenuComponent } from './menu/menu.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
