@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { MenuComponent } from './menu/menu.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConcatenarTextoPipe } from './concatenar-texto.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegistroComponent,
     LoginComponent,
     DetalleComponent,
-    MenuComponent
+    MenuComponent,
+    ConcatenarTextoPipe
   ],
   imports: [
     BrowserModule,FormsModule,AppRoutingModule,ReactiveFormsModule,
