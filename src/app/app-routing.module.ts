@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path:'detalle',
-    component:DetalleComponent
+    component: DetalleComponent
   }
 ];
 
