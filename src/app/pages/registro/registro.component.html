@@ -1,16 +1,21 @@
 <p>registro</p>
-<form>
+<form [formGroup]="myForm" (ngSubmit)="registrarse()">
   <div>
-    <p>Nombre</p>
-    <input type="text" />
-    <p>Apellido</p>
-    <input type="text" />
-    <p>Telefono</p>
-    <input type="text" />
-    <p>Email</p>
-    <input type="email" />
-    <p>Password</p>
-    <input type="password" />
+    <label>Nombre</label>
+    <p *ngIf="myForm.get('nombre')?.errors && myForm.get('nombre')?.dirty">el campo es obligaotorio</p>
+    <input type="text" formControlName="nombre" />
+    <label>Apellido</label>
+    <p *ngIf="myForm.get('apellido')?.errors && myForm.get('apellido')?.dirty">el campo es obligaotorio</p>
+    <input type="text" formControlName="apellido" />
+    <label>Telefono</label>
+    <p *ngIf="myForm.get('telefono')?.errors && myForm.get('telefono')?.dirty">el campo es obligaotorio</p>
+    <input type="text" formControlName="telefono" />
+    <label>Email</label>
+    <p *ngIf="myForm.get('correo')?.errors && myForm.get('correo')?.dirty">el campo es obligaotorio</p>
+    <input type="email" FormControlName="correo" />
+    <label>Password</label>
+    <p *ngIf="myForm.get('clave')?.errors && myForm.get('clave')?.dirty">el campo es obligaotorio</p>
+    <input type="password" FOrmControlName="clave" />
   </div>
   <button type="submit">registrarse</button>
 </form>
