@@ -1,8 +1,14 @@
 <p>login</p>
 <form>
     <div>
-        <p>email</p><input type="email">
-        <p>password</p><input type="password">
+        <label>email</label>
+        <label *ngIf="myForm.get('email')?.errors"> el campo es obligaotorio</label>
+        <input type="email" formControlName="email">
+    
+        <label>clave</label>
+        <label *ngIf="myForm.get('clave')?.errors">el campo es obligaotorio</label>
+        <input type="password" formControlName="clave">
+    
     </div>
     <button type="submit">login</button>
 </form>
