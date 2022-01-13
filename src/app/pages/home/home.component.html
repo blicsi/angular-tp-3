@@ -1,10 +1,10 @@
 <div *ngIf="productos.length>0">
     <div *ngFor="let producto of productos">
         
-        <p>{{producto.title | uppercase | concatenarTexto:'leandro':'juan' }}</p>
+        <p>{{producto.title | uppercase | concatenarTexto:'a' }}</p>
         <p>{{producto.title}}</p>
         <p>{{producto.price | currency}}</p>
-        <a href="{{producto.permalink}}">Ver Detalle</a>
+        <a [routerLink]="['/','producto','2']">Ver Detalle</a>
         
     </div>
 </div>

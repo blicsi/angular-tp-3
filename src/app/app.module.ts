@@ -13,6 +13,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 
 import { ConcatenarTextoPipe } from './concatenar-texto.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,11 +24,12 @@ import { ConcatenarTextoPipe } from './concatenar-texto.pipe';
     LoginComponent,
     DetalleComponent,
     MenuComponent,
-    ConcatenarTextoPipe
+    ConcatenarTextoPipe,
   ],
   imports: [
     BrowserModule,FormsModule,AppRoutingModule,ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
