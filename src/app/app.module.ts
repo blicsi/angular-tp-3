@@ -11,6 +11,7 @@ import { DetalleComponent } from './pages/detalle/detalle.component';
 import { MenuComponent } from './menu/menu.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConcatenarTextoPipe } from './concatenar-texto.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { ConcatenarTextoPipe } from './concatenar-texto.pipe';
     LoginComponent,
     DetalleComponent,
     MenuComponent,
-    ConcatenarTextoPipe
+    ConcatenarTextoPipe,
   ],
   imports: [
     BrowserModule,FormsModule,AppRoutingModule,ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
